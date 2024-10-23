@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор больших чисел</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.3.1/decimal.min.js"></script>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="info">
+            Каноплич Юлия Евгеньевна, 11 группа, 3 курс
+        </div>
+
+        <input type="text" id="firstNumber" placeholder="Введите первое число">
+        <input type="text" id="secondNumber" placeholder="Введите второе число">
+
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+        </select>
+
+        <button onclick="calculate()">Вычислить</button>
+
+        <div class="result" id="result">Результат: </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
