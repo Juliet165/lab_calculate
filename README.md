@@ -12,12 +12,12 @@
 
 1. Склонируйте репозиторий с проектом:
    ```bash
-   git clone <URL_вашего_репозитория>
+   git clone https://github.com/Juliet165/lab_calculate.git
    ```
 
 2. Перейдите в папку с проектом:
    ```bash
-   cd <имя_папки>
+   cd lab_calculate
    ```
 
 3. Откройте файл `index.html` в браузере.
