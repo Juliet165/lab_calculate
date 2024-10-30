@@ -9,7 +9,6 @@ function parseNumber(input) {
         throw new Error("Некорректный ввод чисел: неправильное использование пробелов.");
     }
 
-    
 
     const validFormat = /^-?(\d{1,3}(?: \d{3})*|\d+)(?:\.\d+)?$/;
     if (!validFormat.test(input)) {
