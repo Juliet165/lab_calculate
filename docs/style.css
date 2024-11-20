@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,50 +9,80 @@ body {
 }
 
 .calculator {
-    background-color: #f5e1da; 
-    padding: 30px;
+    background-color: #f5e1da;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 850px; /* Увеличена ширина для комфортного размещения */
     text-align: center;
     border: 1px solid #ddd;
 }
 
-.calculator input, .calculator select, .calculator button {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin: 12px 0;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.inputs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Добавлен отступ снизу */
 }
 
-.result {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #085f63; 
+.inputs-row input, .inputs-row select {
+    width: calc(20% - 10px); /* Регулируется для размещения в одну строку */
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.controls-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px; /* Добавлен отступ снизу */
+}
+
+.controls-row select {
+    width: 250px; /* Увеличена ширина для большего удобства */
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #085f63; /* Цвет текста */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls-row select:hover {
+    background-color: #d1e7ea; /* Светлее при наведении */
+}
+
+.result, .rounded-result {
+    font-size: 1.3rem; /* Увеличен размер шрифта */
+    margin-top: 10px;
+    color: #085f63;
 }
 
 .info {
     text-align: left;
     margin-bottom: 20px;
-    font-size: 1rem;
-    color: #085f63; 
+    font-size: 1.2rem;
+    color: #085f63;
 }
 
 button {
-    background-color: #49beb7; 
+    background-color: #49beb7;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    padding: 15px 30px; /* Увеличен размер кнопки */
+    font-size: 1rem;
 }
 
 button:hover {
-    background-color: #085f63; 
+    background-color: #085f63;
 }
 
 button:active {
-    background-color: #49beb7; 
+    background-color: #49beb7;
 }
